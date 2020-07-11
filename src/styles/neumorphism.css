@@ -1,0 +1,169 @@
+:root {
+    --color-global: #efeeee;
+    --color-global-light: #6c6b6b;
+    --color-global-dark: #6c6b6b;
+    --color-global-border: #b2b0b0;
+    --font-color: black;
+    --neumorphic-dist-button: 1.5px;
+    --neumorphic-blur-button: 2px;
+    --color-global-light-button: #ffffff;
+    --neumorphic-dist: 0.5px;
+    --neumorphic-blur: 0;
+    --neumorphic-dist-map-light: 0;
+    --neumorphic-dist-map-dark: 0;
+    --neumorphic-blur-map: 0;
+    --neumorphic-gradient-start: #ffffff;
+    --neumorphic-gradient-end: #d7d6d6;
+    background-color:  #efeeee;
+}
+
+/* :root {
+    --color-global: #efeeee;
+    --color-global-light: #ffffff;
+    --color-global-dark: #6c6b6b;
+    --font-color: black;
+    --neumorphic-dist: 1px;
+    --neumorphic-blur: 1px;
+    --neumorphic-dist-map-light: 0px;
+    --neumorphic-dist-map-dark: 0px;
+    --neumorphic-blur-map: 1px;
+    --neumorphic-gradient-start: #ffffff;
+    --neumorphic-gradient-end: #d7d6d6;
+    background-color:  #efeeee;
+} */
+
+.custCol {
+    background-color: var(--color-global);
+}
+
+#root{
+    background-color: var(--color-global);
+    color: var(--font-color);
+}
+
+.normal-pressed-button {
+    border-radius: 13px !important;
+    background: var(--color-global) !important;
+    /* background: linear-gradient(145deg, var(--neumorphic-gradient-end), var(--neumorphic-gradient-start)) !important; */
+    box-shadow: inset var(--neumorphic-dist-button) var(--neumorphic-dist-button) var(--neumorphic-blur-button) var(--color-global-dark),
+                inset calc(var(--neumorphic-dist-button) * -1) calc(var(--neumorphic-dist-button) * -1) var(--neumorphic-blur-button) var(--color-global-light-button) !important;
+}
+
+.normal-raised-button {
+    border-radius: 13px !important;
+    background: var(--color-global) !important;
+    /* background: linear-gradient(145deg, var(--neumorphic-gradient-start), var(--neumorphic-gradient-end)) !important; */
+    box-shadow: var(--neumorphic-dist-button) var(--neumorphic-dist-button) var(--neumorphic-blur-button) var(--color-global-dark),
+                calc(var(--neumorphic-dist-button) * -1) calc(var(--neumorphic-dist-button) * -1) var(--neumorphic-blur-button) var(--color-global-light-button) !important;
+}
+
+.normal-pressed {
+    border-radius: 13px !important;
+    border-width: 1px !important;
+    border-color: var(--color-global-border) !important;
+    border-style: solid !important;
+    background: var(--color-global);
+    /* box-shadow: inset var(--neumorphic-dist) var(--neumorphic-dist) var(--neumorphic-blur) var(--color-global-dark),
+                inset calc(var(--neumorphic-dist) * -1) calc(var(--neumorphic-dist) * -1) var(--neumorphic-blur) var(--color-global-light) !important; */
+}
+
+.normal-raised {
+    border-radius: 13px !important;
+    background: var(--color-global);
+    box-shadow: var(--neumorphic-dist) var(--neumorphic-dist) var(--neumorphic-blur) var(--color-global-dark),
+                calc(var(--neumorphic-dist) * -1) calc(var(--neumorphic-dist) * -1) var(--neumorphic-blur) var(--color-global-light) !important;
+}
+
+.normal-pressed-curved {
+    border-radius: 13px !important;
+    background: linear-gradient(145deg, var(--neumorphic-gradient-end), var(--neumorphic-gradient-start)) !important;
+    box-shadow: var(--neumorphic-dist) var(--neumorphic-dist) var(--neumorphic-blur) var(--color-global-dark),
+                calc(var(--neumorphic-dist) * -1) calc(var(--neumorphic-dist) * -1) var(--neumorphic-blur) var(--color-global-light) !important;
+}
+
+.normal-raised-curved {
+    border-radius: 13px !important;
+    background: linear-gradient(145deg, var(--neumorphic-gradient-start), var(--neumorphic-gradient-end)) !important;
+    box-shadow: var(--neumorphic-dist) var(--neumorphic-dist) var(--neumorphic-blur) var(--color-global-dark),
+                calc(var(--neumorphic-dist) * -1) calc(var(--neumorphic-dist) * -1) var(--neumorphic-blur) var(--color-global-light) !important;
+}
+
+.shadow-filter{
+    /* filter: drop-shadow(var(--neumorphic-dist-map-dark) var(--neumorphic-dist-map-dark) var(--neumorphic-blur-map) var(--color-global-dark))
+            drop-shadow(calc(var(--neumorphic-dist-map-light) * -1) calc(var(--neumorphic-dist-map-light) * -1) var(--neumorphic-blur-map) var(--color-global-light)) !important; */
+}
+
+.RegionSelect__value-container {
+    margin-right: 5px;
+    border-radius: 13px !important;
+    background: var(--color-global) !important;
+    box-shadow: inset var(--neumorphic-dist) var(--neumorphic-dist) var(--neumorphic-blur) var(--color-global-dark),
+                inset calc(var(--neumorphic-dist) * -1) calc(var(--neumorphic-dist) * -1) var(--neumorphic-blur) var(--color-global-light) !important;
+    
+}
+
+.RegionSelect__indicators{
+    border-radius: 13px !important;
+    /* curved */
+    /* background: linear-gradient(145deg, var(--neumorphic-gradient-start), var(--neumorphic-gradient-end)) !important; */
+    /* box-shadow: var(--neumorphic-dist) var(--neumorphic-dist) var(--neumorphic-blur) var(--color-global-dark),
+                calc(var(--neumorphic-dist) * -1) calc(var(--neumorphic-dist) * -1) var(--neumorphic-blur) var(--color-global-light) !important; */
+    /* flat */
+    box-shadow: var(--neumorphic-dist-button) var(--neumorphic-dist-button) var(--neumorphic-blur-button) var(--color-global-dark),
+                calc(var(--neumorphic-dist-button) * -1) calc(var(--neumorphic-dist-button) * -1) var(--neumorphic-blur-button) var(--color-global-light-button) !important;
+    margin: 1px 0px 5px 0px !important;
+    cursor: pointer;
+}
+
+.RegionSelect__indicators-focused{
+    border-radius: 13px !important;
+    /* curved */
+    /* background: linear-gradient(145deg, var(--neumorphic-gradient-end), var(--neumorphic-gradient-start)) !important; */
+    /* box-shadow: var(--neumorphic-dist) var(--neumorphic-dist) var(--neumorphic-blur) var(--color-global-dark),
+                calc(var(--neumorphic-dist) * -1) calc(var(--neumorphic-dist) * -1) var(--neumorphic-blur) var(--color-global-light) !important; */
+    /* flat */
+    box-shadow: inset var(--neumorphic-dist-button) var(--neumorphic-dist-button) var(--neumorphic-blur-button) var(--color-global-dark),
+                inset calc(var(--neumorphic-dist-button) * -1) calc(var(--neumorphic-dist-button) * -1) var(--neumorphic-blur-button) var(--color-global-light-button) !important;
+    margin: 1px 0px 5px 0px !important;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    /* background: linear-gradient(90deg, #d7d6d6, #ffffff) !important; */
+    background: linear-gradient(90deg, var(--neumorphic-gradient-end), var(--neumorphic-gradient-start)) !important;
+    /*background: #efeeee !important;*/
+    border-radius: 13px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    /*background: #49AEC0 !important;*/
+    /* background: linear-gradient(90deg, #f2f2f2, #b3b3b3) !important; */
+    background: linear-gradient(90deg, var(--neumorphic-gradient-start), var(--neumorphic-gradient-end)) !important;
+    margin: 10px 0 !important;
+    /*border: 10px solid #efeeee !important;*/
+    border-radius: 13px !important;
+}
+
+@media (min-width:1150px){
+
+    ::-webkit-scrollbar {
+        width: 15px !important;
+        border-radius: 20px !important;
+    }
+}
+
+@media (max-width:1149px){
+
+    ::-webkit-scrollbar {
+        width: 15px !important;
+        border-radius: 20px !important;
+    }
+}
+
+@media (max-width:768px){
+
+    ::-webkit-scrollbar {
+        width: 10px !important;
+        border-radius: 20px !important;
+    }
+}

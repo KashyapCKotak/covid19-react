@@ -1,0 +1,416 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-size: 1em; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.boldText{
+  font-weight: 700;
+}
+
+.th-xs {
+  font-weight: 800;
+  /* background-color: #494949; */
+}
+
+.table-wrapper-scroll-y{
+  border-radius: 13px;
+}
+
+.overlap {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+}
+
+.overlapImage {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+}
+
+
+.vertical-center-helper-parent {
+  display: flex;
+  height: 100%;
+}
+
+.table {
+  margin-bottom: 0px !important;
+}
+
+.RegionSelect__control {
+  border-radius: 13px !important;
+  border-style: unset !important;
+  background-color: var(--color-global) !important;
+  border-color: unset !important;
+  box-shadow: unset !important;
+}
+
+.RegionSelect__control:hover {
+  border-color: unset !important;
+}
+
+.mapRegionName{
+  overflow: hidden
+}
+
+.RegionSelect__dropdown-indicator {
+  color: #717171 !important;
+}
+
+.RegionSelect__indicator-separator {
+  display: none !important
+}
+
+.emphasis-text {
+  color: #5e7ea9
+}
+
+.card,
+.card-title {
+  color: #494949;
+  background-color: var(--color-global) !important;
+  box-shadow: unset !important;
+}
+
+.main-figure {
+  font-weight: 700 !important;
+  font-size: 2rem;
+}
+
+.bar-chart-using-progress-bar {
+  display: flex;
+  margin: 16px 0 20px 0;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12) !important;
+  border-radius: 5px;
+}
+
+.progress-active {
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 5px !important;
+}
+
+.progress-custom-active{
+  padding-right: 2px;
+}
+
+.progress-custom-recovered {
+  border-radius: 0px !important;
+  padding-right: 2px;
+}
+
+.progress-custom-deceased .progress-deceased {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  border-bottom-left-radius: 0px !important;
+  background-color: black !important;
+}
+
+.progress-deceased {
+  background-color: black !important;
+}
+
+.summary-case-numbers {
+  margin: 0.4rem 0px 0.4rem 0px;
+  width: 100%;
+  font-weight: 700;
+}
+
+.summary-case-number {
+  font-weight: 800;
+  float: right;
+}
+
+.summary-case-categories {
+  padding: 10px !important;
+  margin: 0px !important;
+}
+
+.summary-case-categories li {
+  display: flex;
+}
+
+.summary-case-number-badge {
+  margin-right: 0.5rem;
+  height: 0.8rem;
+  width: 0.7rem;
+  border-radius: 10px;
+  border-radius: 13px !important;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12) !important;
+}
+
+.map-numbers {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.green-color {
+  color: #00c851 !important
+}
+
+.blue-color {
+  color: #4285f4 !important
+}
+
+.black-color {
+  color: black !important
+}
+
+.red-color {
+  color: #ff3547 !important
+}
+
+.svg-map-parent{
+ height:100%;
+ padding:10px;
+}
+
+.chart-title{
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+
+.chartButton {
+  height: 100%;
+  width: 25%;
+  margin-right: 5px;
+  max-width: 40px;
+  float: right;
+  font-weight: unset;
+}
+
+@media (min-width:920px) {
+
+  .custom-summary-cn-col {
+    flex: 0 0 50% !important;
+    max-width: 49% !important;
+  }
+
+}
+
+@media (max-width:920px) {
+
+  .custom-summary-cn-col {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .margin-bottom-15-xs-sm {
+    margin-bottom: 15px;
+  }
+
+}
+
+@media (min-width:992px) {
+  .right-padding-5-992px {
+    padding-right: 5px !important;
+  }
+
+  .left-padding-5-992px {
+    padding-left: 5px !important;
+  }
+}
+
+@media (max-width:992px){
+  .custCol{
+    padding-right:8px !important;
+    padding-left:8px !important;
+  }
+}
+
+@media (pointer: coarse), (pointer: none) {
+  .touchDeviceMediumMapHelp{
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-size: 0.8rem;
+    width: 95%;
+    text-align: center;
+    color: #808080;
+  }
+
+  .pointingDeviceMapHelp{
+    display: none;
+  }
+}
+
+@media (pointer: fine) {
+  .pointingDeviceMapHelp{
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
+    color: #808080;
+  }
+
+  .touchDeviceMediumMapHelp{
+    display: none;
+  }
+}
+
+.mapDataHolder{
+  height:10%;
+  min-height:60px;
+  width:100%;
+  display:flex;
+}
+
+.mapData {
+  display: inline-block;
+  height: 100%;
+  width: 20%;
+  padding: 10px;
+  min-width: 115px;
+  max-height: 60px;
+}
+
+.mapDataSubDiv {
+  width: 100%;
+  height: 100%;
+  padding: 0px 5px 2px 5px;
+}
+
+.map{
+  height:70vh;
+  padding:10px 5px 10px 0;
+  max-height: 722px;
+  min-height: 600px;
+}
+
+.mapHolder{
+  height:90%;
+  margin-top:10px;
+  min-height:432px;
+}
+
+.full-width-map-data-1{
+  width:100% !important;
+}
+
+@media (min-width:741px) {
+  .tableHolder{
+    width:100%;
+    position:relative;
+    padding: var(--neumorphic-dist) 2px 2px var(--neumorphic-dist)
+  }
+}
+
+@media (max-width:740px) {
+  .tableHolder{
+    width:100%;
+    position:relative;
+    padding: var(--neumorphic-dist) 2px 2px var(--neumorphic-dist);
+    overflow: hidden
+  }
+}
+
+@media (max-width:644px), (min-width:992px) and (max-width:1260px){
+  .mapDataHolder{
+    display: unset !important;
+  }
+
+  .mapData{
+    padding: 5px !important;
+    width: 25%;
+    max-height: 45px;
+  }
+
+  .map{
+    height:660px !important;
+  }
+
+  .mapHolder{
+    height:84%;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .logo{
+    text-align: center;
+    padding-bottom: 5px !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+@media (max-width:644px){
+  .map{
+    height:600px !important;
+  }
+
+  .recharts-legend-item-text{
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width:992px) and (max-width:1039px), (max-width:529px){
+  .mapHolder{
+    height:77% !important;
+  }
+
+  .mapData{
+    width: 50%;
+    max-height: 45px;
+  }
+
+  .svg-map-parent{
+    height:100%;
+    padding:unset;
+  }
+}
+
+
+/* ------------------------------ Tool Tip Styles -------------------------------- */
+/* Tooltip container */
+.customtooltip {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px dotted black;*/ /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.customtooltip .customtooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 10px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.customtooltip:hover .customtooltiptext {
+  visibility: visible;
+}
+
+.progress{
+  overflow: unset !important;
+}
+/* ------------------------------ Tool Tip Styles End -------------------------------- */
