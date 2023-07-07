@@ -26,7 +26,7 @@
     "react-select": "^3.1.0",
     "recharts": "^1.8.5",
     "semantic-ui-react": "^0.88.2",
-    "stylelint": "^13.6.1",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^20.0.0",
     "topojson": "^3.0.2",
     "versor": "^0.1.2"
